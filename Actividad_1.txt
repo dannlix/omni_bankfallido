@@ -1,21 +1,13 @@
-Instrucciones
-A partir del texto anterior, realiza las siguientes tareas en un documento de texto en blanco o en tu cuaderno:
+1. Lista de Entidades:
 
-Identifica las Entidades: Lista los sustantivos principales que representan objetos del mundo real que debemos almacenar (Ejemplo: Clientes, ...).
-Extrae los Requerimientos Funcionales (RF): Escribe al menos 3 requerimientos que dicten qué información exacta debe guardar cada entidad identificada.
-Extrae Restricciones Clave: Identifica qué campo del cliente debe ser matemáticamente único en la base de datos según el texto.
+Clientes (Customers)
+Cuentas (Accounts)
+Transacciones (Transactions)
+2. Requerimientos Funcionales (RF):
 
+RF1: El sistema debe almacenar de los Clientes: nombre, correo, teléfono, fecha de nacimiento y Tax ID.
+RF2: El sistema debe almacenar de las Cuentas: número de cuenta, moneda, tipo de cuenta, saldo actual y límite de crédito, y a qué cliente pertenecen.
+RF3: El sistema debe almacenar de las Transacciones: cuenta origen, cuenta destino, monto, tipo de transacción y fecha/hora exacta.
+3. Restricción de unicidad:
 
-
-Identificar las entidades 
--Clientes
--Cuentas
--Transacciones
-
-RF
--El sistema debe registrar/almacenar nombres completos, correos electronicos, numeros telefonicos, fechas de nacimientos y sus numeros de identificaciones fiscal (tect ID)
--El sistema debe registrar el numero de cuenta, la mnoneda, el tipo de cuenta, el saldo actual y un limite de creditos
--El sistema debe registrar cuenta de destinos, el monto, el tipo de transaccion y la fehca exacta en la que se completa la transaccion
-
-Restriccion Clave
--Identificar que campo del cliente debe ser matematicamente unico en la base de datos
+El sistema no debe permitir que dos clientes tengan el mismo Tax ID o número de identificación fiscal (Debe ser UNIQUE).
