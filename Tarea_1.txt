@@ -1,10 +1,5 @@
-Identificar las reglas de consistencia matematicas
+Reference Solution
 
-1-¿Que regla sobre el saldo (balance) solicita el CTO para proteger las cuentas?
-    El limite de credito
-
-2-¿Como debe la base de datos manejar la eliminacion de los clientes?
-    Si la cuenta de un cliente lo cierra debe marcar como inactivo
-
-3-¿Que informacion temporal es obligatoria en las cuentas cada vez que sufren un cambio?
-    Es importante que cada vez que haya movimiento de dinero se deba guardar el monto, el tipo de transacción y la fecha en la que se completa
+    NFR1 (Consistencia Matemática): La base de datos debe impedir que las cuentas queden con saldos en números negativos.
+    NFR2 (Auditoría / Soft Delete): La base de datos debe impedir la eliminación física de un registro de cliente, y en su lugar debe poder marcarse como inactivo.
+    NFR3 (Timestamps): La base de datos debe registrar y actualizar automáticamente la fecha y hora exacta (updated_at) cada vez que el registro de una cuenta es modificado.
