@@ -1,0 +1,17 @@
+1-Dibuja las Entidades base: Crea las tres cajas (Clientes, Cuentas, Transacciones).
+
+    "CLIENTES" Linea recta-Pata de Gallo "CUENTAS" Pata de Gallo-Pata de Gallo "TRANSACCIONES"
+
+2-Define las Llaves Primarias: Asígnale a cada entidad un atributo inventado que sirva como Llave Primaria única (Ej. cliente_id, etc.) y márcalo como (PK).
+
+    Clientes            Cuentas             Transacciones
+    CLientes_id(PK)     Cuentas_id(PK)      Transacciones_id(PK)
+
+3-Agrega los atributos del negocio: Lista debajo los atributos que descubrimos en el Día 1 (nombre, saldo, monto, etc.).
+    Clientes            Cuentas             Transacciones
+    CLientes_id(PK)     Cuentas_id(PK)      Transacciones_id(PK)
+    -Nombre             -Saldo              -Monto
+    -Correo
+    -Dirrecion
+    -Ciudad
+
